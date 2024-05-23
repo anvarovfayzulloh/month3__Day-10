@@ -1,0 +1,39 @@
+.start{
+    background-color: #141C24;
+}
+.start__wrapper{
+    padding: 45px 0px 154px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.instruction__wrapper{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 70px;
+    padding-bottom: 90px;
+}
+.instruction-step{
+    text-align: center;
+
+    p{
+    @include text('Roboto', 21.33px, 300, 31.99px, center,);
+    padding-top: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .instruction__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .instruction-step{
+        img{
+            width: 51px;
+        }
+    }
+    .cloud__title{
+        padding-bottom: 90px;
+    }
+}

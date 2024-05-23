@@ -1,0 +1,17 @@
+// COLORS
+
+// SIZES
+
+// FONTS
+
+
+//mixin
+
+@mixin text($ff, $fs, $fw, $lh, $ta, $c: #FFFFFF){
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    text-align: $ta;
+    color: $c;
+}

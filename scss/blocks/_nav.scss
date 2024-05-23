@@ -1,0 +1,33 @@
+// FOR NAV
+nav{
+    background-color: #141C24;
+}
+
+.nav__wrapper{
+    width: 100%;
+    padding: 47px 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.nav__link{
+    @include text('Roboto',16px, 300, center, 29);
+    padding: 5px 0px;
+    &:hover{
+        border-bottom: 1px solid #00C5FF;
+    }
+}
+.mobile__logo{
+    display: none;
+    text-align: center;
+}
+@media screen and (max-width: 1440px) {
+    nav{
+        display: none;
+    }
+}

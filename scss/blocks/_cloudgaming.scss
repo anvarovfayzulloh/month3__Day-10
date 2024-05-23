@@ -1,0 +1,124 @@
+.cloudg{
+    background-color: #141C24;
+    padding-top: 117px;
+    .container{
+        position: relative;
+    }
+}
+.cloud__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 66px;
+    padding-bottom: 45px;
+}
+.cloud__img{
+    width: 664.58px;
+}
+.table{
+    position: relative;
+    top:0;
+    left:0;
+}
+.server{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 100px;
+    transition: 1.5s;
+}
+.noutbook{
+    position: absolute;
+    z-index: 4;
+    top: 110px;
+    left: 350px;
+    transition: 800ms;
+}
+.export{
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    left: 280px;
+    transition: 600ms;
+}
+.import{
+    position: absolute;
+    z-index: 3;
+    top: 90px;
+    left: 315px;
+    transition: 700ms;
+}
+.table:hover .server{
+    transform: translateY(-70px);
+}
+.table:hover .noutbook{
+    transform: translateY(-60px);
+}
+.table:hover .export{
+    transform: translateY(-65px);
+}
+.table:hover .import{
+    transform: translateY(-60px);
+}
+.cloud__content{
+    max-width: 470px;
+}
+.mini__title{
+    @include text('Roboto', 16px, 300, 29px, center, #57D6FF);
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.cloud__title{
+    @include text('Aire', 39px, 400, 39px, left);
+    padding: 17px 0px 60px 0px;
+
+}
+.cloud__text{
+    @include text('Roboto', 22px, 300, 32px, left, #ABABAB);
+}
+
+.cloud__content  p:nth-of-type(2){
+    margin-bottom: 22px;
+    padding-bottom: 27px;
+    border-bottom: 0.5px solid #FFFFFF33;
+}
+.cloud__content  p:nth-of-type(3){
+    padding-bottom: 74px
+}
+.download{
+    @include text('Roboto', 16px, 500, 19px, left, #00C5FF);
+    padding-bottom: 6px;
+    border-bottom: 1px solid #00C5FF;
+}
+.max-line{
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 62px;
+}
+
+@media screen and (max-width: 1060px) {
+    .cloud__wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 850px) {
+    .cloud__img{
+        transform: scale(0.6);
+    }
+    .max-line{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cloudg{
+        .container{
+            padding: 0px 15px;
+        }
+    }
+    .cloud__img{
+        transform: scale(0.5);
+    }
+}

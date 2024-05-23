@@ -1,0 +1,56 @@
+footer{
+    background: #171717;
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0px 56px 0px ;
+}
+.footer__list{
+    display: flex;
+    align-items: center;
+    gap: 20px 20px;
+}
+.footer__list-link{
+    @include text('Pulsar', 12px, 300, 19px, center, #838383);
+
+    &:hover{
+        color: #ECECEC;
+    }
+}
+.footer__action{
+    display: flex;
+    align-items: center;
+    gap: 30px 51px;
+}
+.footer__text{
+    @include text('Roboto', 12px, 300, 14px, center,);
+}
+.actions__link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer__content{
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+@media screen and (max-width: 1120px) {
+    .footer__wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer__action{
+        flex-direction: column-reverse;
+    }
+    .footer__content{
+        padding-top: 56px;
+        flex-direction: column;
+    }
+    .footer__list{
+        flex-direction: column;
+    }
+}

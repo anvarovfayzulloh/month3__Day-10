@@ -1,0 +1,21 @@
+// MAIN
+@import "reset";
+@import "fonts";
+@import "variables";
+// BLOCKS
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/cloudgaming";
+@import "./blocks/start";
+@import "./blocks/rates";
+@import "./blocks/browse";
+@import "./blocks/location";
+@import "./blocks/footer";
+
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 62px;
+}

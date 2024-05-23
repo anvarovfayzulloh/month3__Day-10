@@ -1,0 +1,117 @@
+// FOR HERO
+body{
+    overflow-x: hidden  ;
+}
+
+.hero{
+    background-color: #141C24;
+
+    .container{
+        padding: 0px;
+    }
+}
+.hero__wrapper{
+    padding: 26px 62px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23858788FF' stroke-width='4' stroke-dasharray='15' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");
+    min-height: 687px;
+    position: relative;
+}
+.hero__logo{
+    display: none;
+}
+.humburger{
+    display: none;
+    position: absolute;
+    bottom: 21px;
+    right: 20px;
+}
+.hero__img{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    padding: 26px 134px 26px 0px;
+    object-fit: cover   ;
+    margin-right: 200px;
+    img{
+        box-shadow: rgba(87, 214, 255, 0.25) 0px 54px 55px, rgba(87, 214, 255, 0.12) 0px -12px 30px, rgba(87, 214, 255, 0.12) 0px 4px 6px, rgba(87, 214, 255, 0.17) 0px 12px 13px, rgba(87, 214, 255, 0.09) 0px -3px 5px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.hero__content{
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0px 38px;
+}
+.hero__subtitle{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+}
+.hero__title{
+    font-family: 'Aire';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 97px;
+}
+.button-49{
+    font-family: 'Aire';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 19px 89px;
+    background: linear-gradient(-135deg, transparent 7%, #FFFFFF 5%);
+    border: none;
+    color: #000;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    &:hover {
+        background: linear-gradient(-135deg, transparent 7%, #000000 5%);
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .hero__wrapper{
+        background-image: none;
+        padding: 0px 0px;
+    }
+    .hero__img{
+        padding: 0px;
+
+        position: default;
+        img{
+            box-shadow: none;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    .hero__title{
+        text-align: left;
+    }
+    .hero__subtitle{
+        text-align: left;
+    }
+    .hero__logo{
+        display: inline;
+        position: absolute;
+        top: 41px;
+    }
+    .humburger{
+        display: inline;
+    }
+}
